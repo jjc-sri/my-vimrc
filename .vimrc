@@ -278,6 +278,8 @@ onoremap jk <esc>
 
 nnoremap <silent> <C-Up>   :exe "resize " . (winheight(0) * 3/2)<cr>
 nnoremap <silent> <C-Down> :exe "resize " . (winheight(0) * 2/3)<cr>
+nnoremap <silent> <leader>k :exe "resize " . (winheight(0) * 3/2)<cr>
+nnoremap <silent> <leader>j :exe "resize " . (winheight(0) * 2/3)<cr>
 
 
 " Python specific setup
