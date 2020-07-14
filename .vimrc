@@ -380,6 +380,8 @@ let g:indentLine_enabled = 0
     autocmd FileType sh nnoremap <buffer> <localleader>c 0i#<esc>j
     autocmd FileType markdown nnoremap <buffer> <localleader>c 0i[comment]: # ( <esc>A )<esc>j
     autocmd Filetype dosbatch nnoremap <buffer> <localleader>c 0i::<esc>j
+    autocmd Filetype cmake nnoremap <buffer> <localleader>c I#<esc>j
+
     autocmd Filetype mma nnoremap <buffer> <localleader>c <esc>
     autocmd Filetype mma nnoremap <buffer> <localleader><localleader>c 0i(* <esc>$a *)<esc>j
     autocmd Filetype mma nnoremap <buffer> <localleader><localleader>x O<esc>0i(* <esc>j
