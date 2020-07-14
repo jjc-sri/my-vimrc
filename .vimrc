@@ -368,6 +368,8 @@ let g:indentLine_enabled = 0
 	autocmd Filetype xml setlocal softtabstop=2
 	autocmd Filetype xml setlocal tabstop=2
 	autocmd Filetype xml setlocal shiftwidth=2
+
+	autocmd Filetype json setlocal softtabstop=4
 :augroup END
 
 
