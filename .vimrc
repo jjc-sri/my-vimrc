@@ -390,6 +390,13 @@ let g:indentLine_enabled = 0
     autocmd Filetype mma nnoremap <buffer> <localleader><localleader><localleader>v $a *)<esc>j
 	autocmd Filetype mma nnoremap <buffer> <localleader>fo o(*{{{*)<esc>
 	autocmd Filetype mma nnoremap <buffer> <localleader>fc o(*}}}*)<esc>
+
+	autocmd Filetype xml nnoremap <buffer> <localleader>c I<!-- <esc>A --><esc>j
+	autocmd Filetype xml nnoremap <buffer> <localleader><localleader>ch I<!-- <esc>
+	autocmd Filetype xml nnoremap <buffer> <localleader><localleader>cl A --><esc>
+	autocmd Filetype xml nnoremap <buffer> <localleader><localleader>ck O<!--<esc>
+	autocmd Filetype xml nnoremap <buffer> <localleader><localleader>cj o--><esc>
+	autocmd Filetype xml nnoremap <buffer> <localleader><localleader>c; O<!--<esc>jo--><esc>
 :augroup END
 "todo:  extend ftype_comments to 
 " (1) have a default
