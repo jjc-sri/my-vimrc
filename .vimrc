@@ -76,7 +76,11 @@ set showmatch
 set autoindent
 set ruler
 set visualbell
-set viminfo+=n$VIM/_viminfo
+if has('win32')
+	set viminfo+=n$VIM/_viminfo
+elseif has('unix')
+	set viminfo+=n~/.viminfo
+endif
 set noerrorbells
 set showcmd
 set mouse=a
