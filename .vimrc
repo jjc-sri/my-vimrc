@@ -364,6 +364,10 @@ let g:indentLine_enabled = 0
 "	autocmd Filetype python setlocal foldmethod=expr
 	autocmd Filetype * let g:indentLine_enabled=0
 	autocmd Filetype python let g:indentLine_enabled=1
+
+	autocmd Filetype xml setlocal softtabstop=2
+	autocmd Filetype xml setlocal tabstop=2
+	autocmd Filetype xml setlocal shiftwidth=2
 :augroup END
 
 
