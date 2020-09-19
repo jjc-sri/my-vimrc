@@ -290,7 +290,8 @@ function! GetPythonCommand()
 	return "python"
 endfunction
 function! GetPythonTestSubCommand()
-	return "-m unittest discover -v -s tests"
+"	return "-m unittest discover -v -s tests"
+	return "-m pytest -sv"
 endfunction
 function! GetPythonTestCommand()
 	return GetPythonCommand() . " " . GetPythonTestSubCommand()
