@@ -521,3 +521,5 @@ nnoremap <leader><leader>el :sp .lvimrc<cr>
 " Switch to vim's directory viewer (Explorer)
 nnoremap <leader>d :Ex<cr>
 nnoremap <leader><leader>dd :Rex<cr>
+
+nnoremap <leader>q <C-Q>
