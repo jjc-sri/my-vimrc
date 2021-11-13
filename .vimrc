@@ -77,15 +77,18 @@ set autoindent
 set ruler
 set visualbell
 if has('win32')
-	set viminfo+=n$VIM/_viminfo
+    set viminfo+=n$VIM/_viminfo
+    set undodir=$VIM/vimUndo
 elseif has('unix')
-	set viminfo+=n~/.viminfo
+    set viminfo+=n~/.viminfo
+    set undodir=~/.vim/vimUndo
 endif
 set noerrorbells
 set showcmd
 set mouse=a
 set history=1000
 set undolevels=1000
+set undofile
 
 "" tab completion of filenames, etc
 
